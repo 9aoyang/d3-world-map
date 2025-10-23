@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/d3-world-map/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>d3-demo</title>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://d3js.org/topojson.v0.min.js"></script>
+    <script type="module" crossorigin src="/d3-world-map/assets/index-D_QgcyVQ.js"></script>
+    <link rel="stylesheet" crossorigin href="/d3-world-map/assets/index-DlRd5X5Z.css">
+  </head>
+  <body>
+    <div id="controls">
+      <div class="control-group">
+        <label>
+          <input type="radio" name="mode" value="auto" checked /> 自动旋转
+        </label>
+        <label>
+          <input type="radio" name="mode" value="manual" /> 手动选择
+        </label>
+      </div>
+      <div id="manual-controls" style="display: none">
+        <select id="country-select">
+          <option value="">选择国家</option>
+        </select>
+      </div>
+    </div>
+  </body>
+</html>
