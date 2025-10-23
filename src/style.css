@@ -1,0 +1,104 @@
+/**
+ * A transparent 3d world map using the D3 library with SVG.
+ *
+ * For a Canvas version see: https://codepen.io/chrislaskey/pen/reYxeM
+ *
+ * Combines Jason Davies SVG World Tour bl.ocks map:
+ * https://bl.ocks.org/jasondavies/4183701
+ *
+ * With the SVG Transparent World Map bl.ocks map:
+ * https://bl.ocks.org/emeeks/c88435cb568dcaf11308
+ **/
+
+#controls {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+.control-group label {
+  margin-right: 15px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.control-group input[type='radio'] {
+  margin-right: 5px;
+}
+
+#manual-controls {
+  margin-top: 10px;
+}
+
+#country-select {
+  width: 200px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: white;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+#country-select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.world-outline {
+  fill: none;
+  stroke: rgba(0, 0, 0, 0.1);
+  stroke-width: 1px;
+}
+
+svg {
+  cursor: grab;
+  user-select: none;
+}
+
+svg:active {
+  cursor: grabbing;
+}
+
+.back-country {
+  fill: #dadac4;
+  stroke: #fff;
+  stroke-width: 0px;
+  stroke-linejoin: round;
+}
+
+.back-line {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: 0.05;
+  stroke-width: 0.5px;
+}
+
+.country {
+  fill: #737368;
+  stroke: #fff;
+  stroke-width: 0px;
+  stroke-linejoin: round;
+}
+
+.line {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: 0.08;
+  stroke-width: 0.5px;
+}
+
+text {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-anchor: middle;
+}
