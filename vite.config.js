@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
+  base: process.env.NODE_ENV === 'production' ? '/d3-world-map/' : '/',
   build: {
     outDir: 'dist'
   },
